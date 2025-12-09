@@ -1,1 +1,71 @@
-/* add styles here */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.stars-container {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stars:last-child {
+  margin-bottom: 0;
+}
+
+.stars__star {
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  background-color: transparent;
+  background-image: url('../images/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4px;
+}
+
+.stars__star:first-child {
+  margin-left: 0;
+}
+
+.stars--1 .stars__star:nth-child(1) {
+  background-image: url('../images/star-active.svg');
+}
+
+.stars--2 .stars__star:nth-child(1),
+.stars--2 .stars__star:nth-child(2) {
+  background-image: url('../images/star-active.svg');
+}
+
+.stars--3 .stars__star:nth-child(1),
+.stars--3 .stars__star:nth-child(2),
+.stars--3 .stars__star:nth-child(3) {
+  background-image: url('../images/star-active.svg');
+}
+
+.stars--4 .stars__star:nth-child(1),
+.stars--4 .stars__star:nth-child(2),
+.stars--4 .stars__star:nth-child(3),
+.stars--4 .stars__star:nth-child(4) {
+  background-image: url('../images/star-active.svg');
+}
+
+.stars--5 .stars__star:nth-child(1),
+.stars--5 .stars__star:nth-child(2),
+.stars--5 .stars__star:nth-child(3),
+.stars--5 .stars__star:nth-child(4),
+.stars--5 .stars__star:nth-child(5) {
+  background-image: url('../images/star-active.svg');
+}
